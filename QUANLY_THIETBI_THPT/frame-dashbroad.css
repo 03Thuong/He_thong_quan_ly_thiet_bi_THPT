@@ -1,0 +1,107 @@
+.danh-sch-thit {
+  position: relative;
+  line-height: 140%;
+}
+.button-compact2,
+.button-compact3 {
+  left: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-base);
+}
+.button-compact2 {
+  position: absolute;
+  top: 26px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-deepskyblue);
+  width: 190px;
+  height: 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.button-compact3 {
+  top: 92px;
+  width: 153px;
+}
+.button-compact3,
+.button-compact4,
+.button-compact5 {
+  position: absolute;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-deepskyblue);
+  height: 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.button-compact4 {
+  top: 163px;
+  left: 10px;
+  width: 153px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-base);
+}
+.button-compact5 {
+  top: 219px;
+  left: 18px;
+  width: 214px;
+  padding: var(--padding-10xs) var(--padding-base) 0;
+}
+.button-compact5,
+.button-compact6,
+.button-compact7,
+.button-compact8,
+.nhp-thit-b-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button-compact6,
+.button-compact7,
+.button-compact8 {
+  position: absolute;
+  top: 285px;
+  left: 10px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-deepskyblue);
+  width: 168px;
+  height: 40px;
+  padding: var(--padding-10xs) var(--padding-base) 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.button-compact7,
+.button-compact8 {
+  top: 349px;
+}
+.button-compact8 {
+  top: 483px;
+}
+.frame-dashbroad,
+.frame-dashbroad-child {
+  border-radius: var(--br-6xl);
+  overflow: hidden;
+}
+.frame-dashbroad-child {
+  position: absolute;
+  top: 22px;
+  left: 256px;
+  background-color: var(--color-white);
+  width: 930px;
+  height: 657px;
+}
+.frame-dashbroad {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-deepskyblue);
+  height: 698px;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--presets-body2);
+}

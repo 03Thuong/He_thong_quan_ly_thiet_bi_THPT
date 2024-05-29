@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./frame-dashbroad.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="frame-dashbroad">
+      <div class="button-compact2" id="buttonCompact">
+        <b class="danh-sch-thit">DANH SÁCH THIẾT BỊ</b>
+      </div>
+      <div class="button-compact3" id="buttonCompact1">
+        <b class="danh-sch-thit">MƯỢN THIẾT BỊ</b>
+      </div>
+      <div class="button-compact4" id="buttonCompact2">
+        <b class="danh-sch-thit">TRẢ THIẾT BỊ</b>
+      </div>
+      <div class="button-compact5" id="buttonCompact3">
+        <b class="danh-sch-thit">DANH SÁCH NHÂN VIÊN</b>
+      </div>
+      <div class="button-compact6" id="buttonCompact4">
+        <div class="nhp-thit-b-wrapper">
+          <b class="danh-sch-thit">NHẬP THIẾT BỊ</b>
+        </div>
+      </div>
+      <div class="button-compact7" id="buttonCompact5">
+        <div class="nhp-thit-b-wrapper">
+          <b class="danh-sch-thit">IN PHIẾU NHẬP</b>
+        </div>
+      </div>
+      <div class="button-compact8" id="buttonCompact6">
+        <div class="nhp-thit-b-wrapper">
+          <b class="danh-sch-thit">ĐĂNG XUẤT</b>
+        </div>
+      </div>
+      <div class="frame-dashbroad-child"></div>
+    </div>
+
+    <script>
+      var buttonCompact = document.getElementById("buttonCompact");
+      if (buttonCompact) {
+        buttonCompact.addEventListener("click", function (e) {
+          window.location.href = "./frame-d-s-t-b.html";
+        });
+      }
+      
+      var buttonCompact1 = document.getElementById("buttonCompact1");
+      if (buttonCompact1) {
+        buttonCompact1.addEventListener("click", function (e) {
+          window.location.href = "./frame-muon-t-b.html";
+        });
+      }
+      
+      var buttonCompact2 = document.getElementById("buttonCompact2");
+      if (buttonCompact2) {
+        buttonCompact2.addEventListener("click", function (e) {
+          window.location.href = "./frame-tra-t-b.html";
+        });
+      }
+      
+      var buttonCompact3 = document.getElementById("buttonCompact3");
+      if (buttonCompact3) {
+        buttonCompact3.addEventListener("click", function (e) {
+          window.location.href = "./frame-d-s-n-v.html";
+        });
+      }
+      
+      var buttonCompact4 = document.getElementById("buttonCompact4");
+      if (buttonCompact4) {
+        buttonCompact4.addEventListener("click", function (e) {
+          window.location.href = "./frame-nhap-t-b.html";
+        });
+      }
+      
+      var buttonCompact5 = document.getElementById("buttonCompact5");
+      if (buttonCompact5) {
+        buttonCompact5.addEventListener("click", function (e) {
+          window.location.href = "./frame-in-p-n.html";
+        });
+      }
+      
+      var buttonCompact6 = document.getElementById("buttonCompact6");
+      if (buttonCompact6) {
+        buttonCompact6.addEventListener("click", function (e) {
+          window.location.href = "./frame-login.html";
+        });
+      }
+      </script>
+  </body>
+</html>

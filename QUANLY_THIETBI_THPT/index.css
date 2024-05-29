@@ -1,0 +1,128 @@
+
+.sign-in {
+  position: absolute;
+  top: 151px;
+  left: 346px;
+  background-color: var(--color-white);
+  width: 451px;
+  height: 568px;
+  overflow: hidden;
+
+}
+.frame-login {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(167.28deg, #5d95ca 56.1%, #ee5684);
+  height: 800px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+  font-family: var(--presets-body2);
+
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="password"] {
+  position: relative;
+}
+
+.fas {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ccc;
+}
+
+.fas.fa-eye {
+  display: none;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+#show-password {
+  margin-left: 10px; /* Tạo khoảng cách giữa checkbox và label */
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-login,
+.btn-cancel {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 10px; /* Tạo khoảng cách giữa hai nút */
+}
+
+.btn-cancel {
+  background-color: #dc3545; /* Màu đỏ cho nút Thoát */
+}
+
+.btn-login:hover {
+  background-color: #0056b3;
+}
+
+.btn-cancel:hover {
+  background-color: #c82333; /* Màu đỏ hover cho nút Thoát */
+}
