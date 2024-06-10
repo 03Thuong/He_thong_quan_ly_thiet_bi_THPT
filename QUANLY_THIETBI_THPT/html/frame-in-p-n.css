@@ -135,48 +135,6 @@
   color: var(--color-gray-100);
 }
 
-
-
-
-.text282 {
-  flex: 1;
-  position: relative;
-  line-height: 130%;
-}
-.content284 {
-  overflow: hidden;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding: var(--padding-3xs) var(--padding-xs);
-}
-.cell282,
-.content284,
-.row28 {
-  align-self: stretch;
-  display: flex;
-  align-items: flex-start;
-}
-.cell282 {
-  width: 120px;
-  background-color: var(--color-gray-400);
-  border-top: 1px solid var(--color-silver);
-  border-left: 1px solid var(--color-silver);
-  box-sizing: border-box;
-  flex-direction: column;
-  justify-content: center;
-}
-.row28 {
-  background-color: var(--color-white);
-  overflow: hidden;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.text297 {
-  width: 96px;
-  position: relative;
-  line-height: 130%;
-  display: none;
-}
 .content299,
 .nhap-tb1 {
   box-sizing: border-box;
@@ -215,16 +173,25 @@
   left: 634px;
   box-shadow: var(--button-shadow);
   border-radius: var(--br-5xs);
-  background-color: var(--color-deepskyblue);
+  background-color: #5AB2FF; /* Deep sky blue background */
   width: 122px;
   height: 37px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: var(--padding-sm) var(--padding-5xl);
+  padding: var(--padding-10xs) var(--padding-base) 0;
   box-sizing: border-box;
-  color: var(--color-white);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: #FFFFFF; /* White text color */
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  border: none; /* Remove border */
+  cursor: pointer;
+  font-weight: bold; /* Make the text bold */
+
 }
 .phiu-nhp-thit-b-group {
   position: absolute;
@@ -264,7 +231,7 @@
   cursor: pointer;
 }
 .frame-in-pn {
-  width: 100%;
+  width: 85%;
   position: relative;
   border-radius: var(--br-6xl);
   height: 593px;
@@ -273,4 +240,26 @@
   font-size: var(--font-size-sm);
   color: var(--color-white);
   font-family: var(--presets-body2);
+}
+
+.my-table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+}
+
+.my-table th,
+.my-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.my-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.my-table tr:nth-child(even) {
+  background-color: #f9f9f9;
 }

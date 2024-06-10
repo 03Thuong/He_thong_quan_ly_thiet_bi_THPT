@@ -217,108 +217,10 @@
   width: 241px;
   height: 28px;
 }
-.m-thit-b1 {
-  margin: 0;
-}
-.text {
-  flex: 1;
-  position: relative;
-  line-height: 130%;
-}
-.cell,
-.content1 {
-  align-self: stretch;
-  display: flex;
-}
-.content1 {
-  overflow: hidden;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: var(--padding-3xs) var(--padding-xs);
-}
-.cell {
-  background-color: var(--color-gray-300);
-  border-top: 1px solid var(--color-silver);
-  border-left: 1px solid var(--color-silver);
-  flex-direction: column;
-}
-.cell,
-.cell1,
-.row {
-  flex: 1;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.cell1 {
-  align-self: stretch;
-  background-color: var(--color-gray-300);
-  border-top: 1px solid var(--color-silver);
-  border-left: 1px solid var(--color-silver);
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-.row {
-  background-color: var(--color-deepskyblue);
-  overflow: hidden;
-  flex-direction: row;
-  text-align: center;
-  color: var(--color-white);
-}
-.cell9,
-.row,
-.row1,
-.row2 {
-  align-self: stretch;
-  display: flex;
-}
-.cell9 {
-  flex: 1;
-  background-color: var(--color-gray-400);
-  border-top: 1px solid var(--color-silver);
-  border-left: 1px solid var(--color-silver);
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.row1,
-.row2 {
-  height: 38px;
-  flex-direction: row;
-}
-.row1 {
-  background-color: var(--color-white);
-  align-items: center;
-  justify-content: center;
-}
-.row2 {
-  overflow: hidden;
-  flex-shrink: 0;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.row2,
-.row6,
-.table,
-.timkiem-text {
-  background-color: var(--color-white);
-}
-.row6 {
-  align-self: stretch;
-  flex: 1;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.table,
-.timkiem-text {
-  position: absolute;
-  box-sizing: border-box;
-}
+
+/* Table Styles */
 .table {
+  position: absolute;
   top: 353px;
   left: 0;
   border-radius: var(--br-9xs);
@@ -326,14 +228,31 @@
   width: 1058px;
   height: 304px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
   text-align: left;
   font-size: var(--font-size-xs);
+  background-color: var(--color-white);
+  color: var(--color-black);
 }
+
+.table th,
+.table td {
+  padding: var(--padding-3xs) var(--padding-xs);
+  border-top: 1px solid var(--color-silver);
+  border-left: 1px solid var(--color-silver);
+}
+
+.table th {
+  background-color: var(--color-deepskyblue);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.table td {
+  background-color: var(--color-white);
+}
+
 .timkiem-text {
+  position: absolute;
   top: 266px;
   left: 659px;
   border-radius: var(--br-5xs);
@@ -341,6 +260,7 @@
   width: 266px;
   height: 28px;
 }
+
 .search-24dp-fill0-wght400-grad-icon {
   position: absolute;
   top: 273px;
@@ -349,10 +269,12 @@
   height: 21px;
   object-fit: cover;
 }
+
 .nhp-li {
   position: relative;
   line-height: 140%;
 }
+
 .button-compact14,
 .button-compact15,
 .button-compact16,
@@ -373,6 +295,9 @@
   text-align: left;
   font-size: var(--font-size-sm);
   color: var(--color-white);
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
 }
 .button-compact15,
 .button-compact16,
@@ -434,7 +359,7 @@
   cursor: pointer;
 }
 .frame-ds-tb {
-  width: 100%;
+  width: 90%;
   position: relative;
   border-radius: var(--br-6xl);
   height: 689px;
@@ -443,4 +368,40 @@
   font-size: var(--font-size-sm);
   color: var(--color-white);
   font-family: var(--presets-body2);
+}
+
+/* Additional Table Styles */
+.frame-ds-tb table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.frame-ds-tb th,
+.frame-ds-tb td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.frame-ds-tb th {
+  background-color: var(--color-deepskyblue);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.frame-ds-tb td {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+
+.button {
+  background: #5AB2FF;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold; /* Add this line to make the text bold */
+
 }

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./frame-d-s-n-v.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="frame-ds-nv">
+      <div class="button-compact20" id="buttonCompact">
+        <b class="tr-thit-b2">TRẢ THIẾT BỊ</b>
+      </div>
+      <div class="button-compact21" id="buttonCompact1">
+        <div class="nhp-thit-b-frame">
+          <b class="tr-thit-b2">NHẬP THIẾT BỊ</b>
+        </div>
+      </div>
+      <div class="button-compact22">
+        <div class="nhp-thit-b-frame">
+          <b class="tr-thit-b2">DANH SÁCH NHÂN VIÊN</b>
+        </div>
+      </div>
+      <div class="button" id="buttonContainer">
+        <b class="danh-sch-thit3">DANH SÁCH THIẾT BỊ</b>
+      </div>
+      <div class="button-compact23" id="buttonCompact3">
+        <div class="nhp-thit-b-frame">
+          <b class="tr-thit-b2">IN PHIẾU NHẬP</b>
+        </div>
+      </div>
+      <div class="button-compact24" id="buttonCompact4">
+        <div class="nhp-thit-b-frame">
+          <b class="tr-thit-b2">ĐĂNG XUẤT</b>
+        </div>
+      </div>
+      <div class="danh-sch-nhn-vin-parent">
+        <b class="danh-sch-nhn3">DANH SÁCH NHÂN VIÊN</b>
+        <b class="m-nhn-vin">Mã nhân viên</b>
+        <b class="tn-nhn-vin">Tên nhân viên</b>
+        <b class="a-ch">Địa chỉ</b>
+        <b class="s-in-thoi">Số điện thoại</b>
+        <input type="text" class="tentb-text1" ></input> 
+        <input type="text" class="sl-text1" ></input> 
+        <input type="text" class="matb-text1" ></input>
+        <input type="text" class="ngaynhap-text1" ></input> 
+        <b class="ngy-sinh">Ngày sinh</b>
+        <b class="mt-khu1">Mật khẩu</b>
+        <input type="date" class="ncc-text1" ></input> 
+        <b class="cccd">CCCD</b>
+        <b class="quyn">Quyền</b>
+        <b class="gii-tnh">Giới tính</b>
+        <b class="ti-khon1">Tài khoản</b>
+        <input type="text" class="bh-text1" ></input><!--cccd-->
+        <input type="text" class="gia-text1" ></input><!--gioitinh-->
+        <input type="text" class="gia-text2" ></input><!--mk-->
+        <input type="text" class="gia-text3" ></input><!--quyen-->
+        <input type="text" class="trinhtrang-text1" ></input><!--tk-->
+        <input type="text" class="timkiem-text1" ></input>
+        <img
+          class="search-24dp-fill0-wght400-grad-icon1"
+          alt=""
+          src="./public/search-24dp-fill0-wght400-grad0-opsz24-1@2x.png"
+        />
+
+        <button class="button-compact25" >
+          <div class="nhp-thit-b-frame">
+            <span>NHẬP LẠI</span>
+          </div>
+        </button>
+        <button class="button-compact26" id="add-button">
+          <div class="nhp-thit-b-frame">
+            <span>THÊM</span>
+          </div>
+        </button>
+        <button class="button-compact27">
+          <div class="nhp-thit-b-frame">
+            <span>XÓA</span>
+          </div>
+        </button>
+        <button class="button-compact28">
+          <div class="nhp-thit-b-frame">
+            <span>SỬA</span>
+          </div>
+        </button>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Mã NV</th>
+              <th>Tên NV</th>
+              <th>Ngày sinh</th>
+              <th>Giới tính</th>
+              <th>Địa chỉ</th>
+              <th>Số ĐT</th>
+              <th>CCCD</th>
+              <th>Tài khoản</th>
+              <th>Mật khẩu</th>
+              <th>Quyền</th>
+            </tr>
+          </thead>
+          <tbody id="employeeTableBody">
+            <tr>
+              <td>NV001</td>
+              <td>Nguyễn Thị An</td>
+              <td>1955-02-03</td>
+              <td>Nữ</td>
+              <td>Khóm 1, Phường 1, TP.Trà Vinh, Tỉnh Trà Vinh</td>
+              <td>0123456789</td>
+              <td>089359753217</td>
+              <td>an</td>
+              <td>123</td>
+              <td>NhanVien</td>
+            </tr>
+            <tr>
+              <td>NV002</td>
+              <td>Trần Văn Bình</td>
+              <td>1995-04-05</td>
+              <td>Nam</td>
+              <td>Khóm 2, Phường 1, TP.Trà Vinh, Tỉnh Trà Vinh</td>
+              <td>0987654321</td>
+              <td>089731579241</td>
+              <td>binh</td>
+              <td>123</td>
+              <td>NhanVien</td>
+            </tr>
+            <tr>
+              <td>NV003</td>
+              <td>Lê Minh Cường</td>
+              <td>1996-06-01</td>
+              <td>Nam</td>
+              <td>Khóm 3, Phường 1, TP.Trà Vinh, Tỉnh Trà Vinh</td>
+              <td>0369871245</td>
+              <td>080638593165</td>
+              <td>cuong</td>
+              <td>123</td>
+              <td>NhanVien</td>
+            </tr>
+            <tr>
+              <td>NV004</td>
+              <td>Phạm Thị Dung</td>
+              <td>1997-12-09</td>
+              <td>Nữ</td>
+              <td>Khóm 4, Phường 1, TP.Trà Vinh, Tỉnh Trà Vinh</td>
+              <td>0743217890</td>
+              <td>083815730825</td>
+              <td>Dung</td>
+              <td>123</td>
+              <td>NhanVien</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="button-compact29" id="buttonCompact5">
+        <div class="nhp-thit-b-frame">
+          <b class="tr-thit-b2">MƯỢN THIẾT BỊ</b>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var buttonCompact = document.getElementById("buttonCompact");
+      if (buttonCompact) {
+        buttonCompact.addEventListener("click", function (e) {
+          window.location.href = "./frame-tra-t-b.html";
+        });
+      }
+      
+      var buttonCompact1 = document.getElementById("buttonCompact1");
+      if (buttonCompact1) {
+        buttonCompact1.addEventListener("click", function (e) {
+          window.location.href = "./frame-nhap-t-b.html";
+        });
+      }
+      
+      var buttonContainer = document.getElementById("buttonContainer");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+          window.location.href = "./frame-d-s-t-b.html";
+        });
+      }
+      
+      var buttonCompact3 = document.getElementById("buttonCompact3");
+      if (buttonCompact3) {
+        buttonCompact3.addEventListener("click", function (e) {
+          window.location.href = "./frame-in-p-n.html";
+        });
+      }
+      
+      var buttonCompact4 = document.getElementById("buttonCompact4");
+      if (buttonCompact4) {
+        buttonCompact4.addEventListener("click", function (e) {
+          window.location.href = "./frame-login.html";
+        });
+      }
+      
+      var buttonCompact5 = document.getElementById("buttonCompact5");
+      if (buttonCompact5) {
+        buttonCompact5.addEventListener("click", function (e) {
+          window.location.href = "./frame-muon-t-b.html";
+        });
+      }
+
+
+// Thêm nút Thêm
+var addButton = document.getElementById("add-button");
+    addButton.addEventListener("click", function (e) {
+      // Get the input values
+      var manv = document.querySelector(".matb-text1").value;
+      var tennv = document.querySelector(".tentb-text1").value;
+      var ngaysinh = document.querySelector(".ncc-text1").valueAsDate; // Lấy giá trị cho input date
+      var diachi = document.querySelector(".ngaynhap-text1").value;
+      var sodt = document.querySelector(".gia-text1").value;
+      var gioitinh = document.querySelector(".sl-text1").value;
+      var cccd = document.querySelector(".bh-text1").value;
+      var tk = document.querySelector(".trinhtrang-text1").value;
+      var mk = document.querySelector(".gia-text2").value;
+      var quyen = document.querySelector(".gia-text3").value;
+      
+      // Check if the input values are not empty
+      if (
+        manv != "" &&
+        tennv != "" &&
+        ngaysinh != "" &&
+        diachi != "" &&
+        gioitinh != "" &&
+        cccd != "" &&
+        sodt != "" &&
+        mk != "" &&
+        quyen != "" &&
+        tk != ""
+      ) {
+        // Create a new row
+        var newRow = document.createElement("tr");
+        newRow.innerHTML = `
+          <td>${manv}</td>
+          <td>${tennv}</td>
+          <td>${ngaysinh.toLocaleDateString()}</td>
+          <td>${gioitinh}</td>
+          <td>${sodt}</td>
+          <td>${diachi}</td>
+          <td>${cccd}</td>
+          <td>${tk}</td>
+          <td>${mk}</td>
+          <td>${quyen}</td>
+          
+        `;
+        // Append the new row to the table body
+        document.getElementById("employeeTableBody").appendChild(newRow); // Sử dụng id của tbody
+      } else {
+        alert("Vui lòng điền đầy đủ thông tin!");
+      }
+    });
+
+
+// Thêm nút Xóa
+var deleteButton = document.querySelector(".button-compact27");
+if (deleteButton) {
+  deleteButton.addEventListener("click", function (e) {
+    // Thực hiện hành động xóa
+    var table = document.querySelector("table");
+    var selectedRows = table.querySelectorAll(".selected");
+    // Xóa các hàng được chọn
+    selectedRows.forEach(row => {
+      table.deleteRow(row.rowIndex);
+    });
+
+    // Reset lại các ô nhập liệu
+    document.querySelector(".matb-text1").value = "";
+    document.querySelector(".tentb-text1").value = "";
+    document.querySelector(".ncc-text1").value = "";
+    document.querySelector(".ngaynhap-text1").value = "";
+    document.querySelector(".sl-text1").value = "";
+    document.querySelector(".bh-text1").value = "";
+    document.querySelector(".gia-text1").value = "";
+    document.querySelector(".gia-text2").value = "";
+    document.querySelector(".gia-text3").value = "";
+    document.querySelector(".trinhtrang-text1").value = "";
+
+    // Xóa chọn hàng được chọn
+    var selectedRow = document.querySelector(".selected");
+    if (selectedRow) {
+      selectedRow.classList.remove("selected");
+    }
+  });
+}
+
+// Add an event listener to the table rows
+var table = document.querySelector("table");
+if (table) {
+  table.addEventListener("click", function (e) {
+    // Get the selected row
+    var row = e.target.parentNode;
+    while (row.tagName !== "TR") {
+      row = row.parentNode;
+    }
+    selectRow(row);
+  });
+}
+
+// Function to select a row
+function selectRow(row) {
+  // Remove any existing selection
+  var selectedRow = document.querySelector(".selected");
+  if (selectedRow) {
+    selectedRow.classList.remove("selected");
+  }
+  
+  // Add the selected class to the row
+  row.classList.add("selected");
+  
+  // Get the row data
+  var rowData = [];
+  for (var i = 0; i < row.cells.length; i++) {
+    rowData.push(row.cells[i].innerHTML);
+  }
+  
+  // Fill in the edit form with the row data
+  document.querySelector(".matb-text1").value = rowData[0];
+  document.querySelector(".tentb-text1").value = rowData[1];
+  document.querySelector(".ncc-text1").value = rowData[2];//ngày
+  document.querySelector(".ngaynhap-text1").value = rowData[4];//đc
+  document.querySelector(".gia-text1").value = rowData[3]; //sdt
+  document.querySelector(".sl-text1").value = rowData[5];//gioitinh
+  document.querySelector(".bh-text1").value = rowData[6];// cccd
+  document.querySelector(".trinhtrang-text1").value = rowData[7]; //tk
+  document.querySelector(".gia-text2").value = rowData[8];
+  document.querySelector(".gia-text3").value = rowData[9];
+}
+
+// Add an event listener to the edit button
+var editButton = document.querySelector(".button-compact28");
+if (editButton) {
+  editButton.addEventListener("click", function (e) {
+    // Get the selected row
+    var selectedRow = document.querySelector(".selected");
+    if (selectedRow) {
+      // Update the row data with the edited values
+      selectedRow.cells[0].innerHTML = document.querySelector(".matb-text1").value;
+      selectedRow.cells[1].innerHTML = document.querySelector(".tentb-text1").value;
+      selectedRow.cells[2].innerHTML = document.querySelector(".ngaynhap-text1").value;
+      selectedRow.cells[3].innerHTML = document.querySelector(".sl-text1").value;
+      selectedRow.cells[4].innerHTML = document.querySelector(".ncc-text1").value;
+      selectedRow.cells[5].innerHTML = document.querySelector(".bh-text1").value;
+      selectedRow.cells[6].innerHTML = document.querySelector(".gia-text1").value;
+      selectedRow.cells[7].innerHTML = document.querySelector(".gia-text2").value;
+      selectedRow.cells[8].innerHTML = document.querySelector(".gia-text3").value;
+      selectedRow.cells[9].innerHTML = document.querySelector(".trinhtrang-text").value;
+
+    }
+  });
+}
+// Thêm nút Nhập lại
+var resetButton = document.querySelector(".button-compact25");
+if (resetButton) {
+  resetButton.addEventListener("click", function (e) {
+    // Reset lại các ô nhập liệu
+    document.querySelector(".matb-text1").value = "";
+    document.querySelector(".tentb-text1").value = "";
+    document.querySelector(".ngaynhap-text1").value = "";
+    document.querySelector(".sl-text1").value = "";
+    document.querySelector(".ncc-text1").value = "";
+    document.querySelector(".bh-text1").value = "";
+    document.querySelector(".gia-text1").value = "";
+    document.querySelector(".gia-text2").value = "";
+    document.querySelector(".gia-text3").value = "";
+    document.querySelector(".trinhtrang-text1").value = "";
+   
+    
+    // Xóa chọn hàng được chọn
+    var selectedRow = document.querySelector(".selected");
+    if (selectedRow) {
+      selectedRow.classList.remove("selected");
+    }
+  });
+}
+
+   // Function to filter table rows based on the search input
+   function filterTable() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.querySelector(".timkiem-text1");
+        filter = input.value.toUpperCase();
+        table = document.querySelector("table");
+        tr = table.getElementsByTagName("tr");
+
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td");
+          for (var j =0; j < td.length; j++) {
+            txtValue = td[j].textContent || td[j].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+              break;
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+
+      // Add an event listener to the search input
+      var searchInput = document.querySelector(".timkiem-text1");
+      searchInput.addEventListener("keyup", filterTable);
+
+      </script>
+  </body>
+</html>

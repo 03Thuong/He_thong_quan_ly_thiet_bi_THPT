@@ -27,7 +27,7 @@
                   <label for="show-password">Hiện mật khẩu</label>
               </div>
               <div class="btn-group">
-                  <button class="btn-login"><a href="./frame-dashbroad.html" class="btn-login">ĐĂNG NHẬP</a></button>
+                <button class="btn-login" id="login-btn">ĐĂNG NHẬP</button>
                 <button class="btn-cancel">THOÁT</button>
               </div>
   
@@ -36,19 +36,33 @@
     </div>
 
     <script>
+ const passwordField = document.getElementById('password');
+      const showPasswordCheckbox = document.getElementById('show-password');
+      const loginBtn = document.getElementById('login-btn');
 
-
-      const passwordField = document.getElementById('password');
-        const showPasswordCheckbox = document.getElementById('show-password');
-
-        showPasswordCheckbox.addEventListener('change', function() {
+      showPasswordCheckbox.addEventListener('change', function() {
         if (showPasswordCheckbox.checked) {
-         passwordField.type = 'text';} 
-         else {
-                passwordField.type = 'password';
-             }
-});
+          passwordField.type = 'text';} 
+        else {
+          passwordField.type = 'password';
+        }
+      });
 
+      loginBtn.addEventListener('click', function(event) {
+        event.preventDefault(); // Ngăn form submit mặc định
+
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // Kiểm tra thông tin đăng nhập (bạn cần thay thế bằng logic kiểm tra của bạn)
+        if (username === 'admin' && password === '123') {
+          // Đăng nhập thành công
+          window.location.href = './frame-dashbroad.html'; // Chuyển hướng đến trang dashbroad
+        } else {
+          // Đăng nhập thất bại
+          alert('Tên đăng nhập hoặc mật khẩu không chính xác!');
+        }
+      });
       </script>
   </body>
 </html>
